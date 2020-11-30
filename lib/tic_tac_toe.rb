@@ -71,7 +71,7 @@ def full?(board)
 end
 
 def won?(board)
-  return false if board_empty?(board) === true
+  false if board_empty?(board) === true
 
   WIN_COMBINATIONS.each do |win_combination|
     if (board[win_combination[0]] == "X" && board[win_combination[1]] == "X" && board[win_combination[2]] == "X")
